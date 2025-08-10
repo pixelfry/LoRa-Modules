@@ -2,8 +2,7 @@
 
 pkgs.mkShell {
 
-  packages {
-    arduino-ide
+  packages = [
     (pkgs.python3.withPackages(p: with p; [
       pyserial
     ]))
